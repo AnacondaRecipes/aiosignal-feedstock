@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python
+    - wheel
   run:
     - frozenlist >=1.1.0
     - python
@@ -35,7 +36,7 @@ test:
     - pytest-cov
   commands:
     - pip check
-    - pytest -v tests/
+    - pytest -v tests/ --asyncio-mode=auto
 
 about:
   home: https://github.com/aio-libs/aiosignal
