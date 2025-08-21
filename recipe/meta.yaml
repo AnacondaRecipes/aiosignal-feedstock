@@ -31,6 +31,7 @@ test:
   requires:
     - pip
     - pytest
+    - pytest-asyncio
     - pytest-cov
   commands:
     - pip check
